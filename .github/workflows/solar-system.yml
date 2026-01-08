@@ -68,7 +68,7 @@ jobs:
         with:
           name: Code-Coverage-result
           path: coverage
-          retention-days: 4
+          retention-days: 5
 
   docker:
     name: Docker image and pushing to Ghcr.io
