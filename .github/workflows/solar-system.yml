@@ -82,7 +82,7 @@ jobs:
         with:
           registry: registry.gitlab.com
           username: ${{ vars.GITLAB_USERNAME }}
-          password: ${{ secrets.GITLAB_PASSWORD }}
+          password: ${{ secrets.GITLAB_PASSWORD}}
 
       - name: Push the docker image
         uses: docker/build-push-action@v4
