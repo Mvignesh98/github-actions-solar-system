@@ -82,7 +82,7 @@ jobs:
       - name: Log in to Github Container Registry
         uses: docker/login-action@v3
         with:
-          registry: registry.gitlab.com
+          registry: ghcr.io
           username: ${{ vars.GITLAB_USERNAME }}
           password: ${{ secrets.GITLAB_PASSWORD }}
 
