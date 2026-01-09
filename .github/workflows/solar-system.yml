@@ -73,6 +73,8 @@ jobs:
   docker:
     name: Docker image and pushing to Ghcr.io
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
