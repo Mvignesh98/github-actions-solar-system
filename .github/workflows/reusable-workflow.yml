@@ -6,6 +6,10 @@ on:
                 description: "Provide the Ingress URL"
                 required: true
                 type: string
+        outputs:
+            APP_INGRESS_URL:
+                description: "The Ingress URL of the deployed application"
+                value: ${{ needs.dev-deploy.outputs.APP_INGRESS_URL }}
 
 jobs:
     integration-test:
